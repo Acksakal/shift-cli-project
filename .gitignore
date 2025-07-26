@@ -1,0 +1,39 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+src/*.class
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Editor / Temp Files ###
+*~
+*.swp
+
+### Project-specific temp/test data files ###
+in1.txt
+in2.txt
+floats.txt
+integers.txt
+text.txt
