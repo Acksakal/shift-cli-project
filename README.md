@@ -31,6 +31,8 @@ The tool also supports customizable output options and generates statistics per 
 
 ```sh
 javac src/*.java
+OR
+javac src\*.java
 ```
 
 ### 3. Run the tool
