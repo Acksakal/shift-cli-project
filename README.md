@@ -73,6 +73,29 @@ java -cp src Main -a -f /absolute/path/to/in1.txt
 
 ---
 
+### 3. 📂 Path Resolution
+
+- **Relative paths** (no leading slash):  
+  Interpreted relative to your current directory in the terminal.  
+  Example:
+  ```sh
+  java -jar ShiftProject.jar input.txt
+  ```
+
+- **Absolute paths** (start with `/` on Unix or `C:/` on Windows):  
+  On Windows, a path like `/desktop/in1.txt` will be resolved relative to your **home directory**,  
+  typically `C:/Users/<your-name>/`, so the full path becomes `C:/Users/<your-name>/desktop/in1.txt`.  
+  Example:
+  ```sh
+  java -jar ShiftProject.jar /desktop/in1.txt
+
+> ⚠️ **Note for Git Bash Users on Windows**  
+> Keep in mind that Git Bash uses a Unix-like emulated environment,  
+> so absolute paths may resolve differently than in regular Windows CMD or PowerShell.  
+> The home directory, in particular, does not map directly to `C:/Users/<your-name>`.
+
+---
+
 ## ⚙️ Options
 
 | Flag  | Description |
@@ -104,11 +127,4 @@ java -cp src Main -a -f /absolute/path/to/in1.txt
 - **Full statistics (`-f`)**:
   - For integers/floats: count, min, max, sum, average
   - For text: count, shortest, and longest line length
-
----
- 
-> ⚠️ **Note for Git Bash Users on Windows**  
-> Keep in mind that Git Bash uses a Unix-like emulated environment,  
-> so absolute paths may resolve differently than in regular Windows CMD or PowerShell.  
-> The home directory, in particular, does not map directly to `C:\Users\YourName`.
-
+    
