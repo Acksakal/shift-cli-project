@@ -1,6 +1,6 @@
 # 🧹 Java CLI File Processor
 
-This is a **Command-Line Interface (CLI) tool written in Java (24.0.2) for processing input files line-by-line.  
+This is a **Command-Line Interface (CLI) tool written in Java (24.0.2) using IntelliJ IDEA 2025.1.3 (Community Edition) for processing input files line-by-line.  
 Each line is categorized as an **integer**, **float** meaning real (R) numbers, or **text**, and written to separate output files.  
 The tool also supports customizable output options and generates statistics per data type.
 
@@ -27,21 +27,43 @@ The tool also supports customizable output options and generates statistics per 
 
 ### 1. Clone the repository and cd into it
 
-### 2. Compile the source code
+### 2. Run the Tool
+
+You can use the tool in **two ways**:
+
+---
+
+#### ✅ Option 1: Using the prebuilt `.jar` (no compilation needed)
+
+The repo contains the compiled JAR file (`ShiftProject.jar`), you can run it directly from the command line without compiling anything:
 
 ```sh
-javac src/*.java
-OR
-javac src\*.java
+java -jar util.jar [options] <input-file1> <input-file2> ...
 ```
 
-### 3. Run the tool
+##### Example:
 
 ```sh
-java -cp src Main [options] <input-file1> <input-file2> ... <input-fileN>
+java -jar util.jar -s -a -p sample- in1.txt in2.txt
 ```
 
-#### Example:
+---
+
+#### 🛠️ Option 2: Compile and run from source (for developers)
+
+If you're working with source code, compile and run like this:
+
+```sh
+javac src\*.java => yes, it was written and tested on Windows
+```
+
+Then run:
+
+```sh
+java -cp src Main [options] <input-file1> <input-file2> ...
+```
+
+##### Example:
 
 ```sh
 java -cp src Main data/input1.txt data/input2.txt
