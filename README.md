@@ -38,13 +38,13 @@ You can use the tool in **two ways**:
 The repo contains the compiled JAR file (`ShiftProject.jar`), you can run it directly from the command line without compiling anything:
 
 ```sh
-java -jar util.jar [options] <input-file1> <input-file2> ...
+java -jar ShiftProject.jar [options] <input-file1> <input-file2> ...
 ```
 
 ##### Example:
 
 ```sh
-java -jar util.jar -s -a -p sample- in1.txt in2.txt
+java -jar ShiftProject.jar -s -a -p sample- in1.txt in2.txt
 ```
 
 ---
@@ -105,6 +105,21 @@ java -cp src Main -a -f /absolute/path/to/in1.txt
 | `-a` | Append to existing output files instead of overwriting |
 | `-s` | Print short statistics |
 | `-f` | Print full statistics (implies `-s`) |
+
+---
+
+## 📝 Write vs Append Mode
+
+1. **By default**, output files are **created** (if they don't exist) and **overwritten** each time the tool runs.
+
+2. The `-a` flag enables **append mode**, which changes this behavior:
+   - Lines will be **added** to the end of existing output files instead of replacing them.
+   
+   - If a file **does not exist**, you’ll be notified — but the program will continue running normally.
+
+   - If a file **does exist**, new lines will be appended.
+
+   - File existence is checked **after applying the `-p` prefix** (if provided).
 
 ---
 
