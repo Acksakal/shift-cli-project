@@ -1,7 +1,7 @@
 # 🧹 Java CLI File Processor
 
 This is a **Command-Line Interface (CLI) tool written in Java (24.0.2) for processing input files line-by-line.  
-Each line is categorized as an **integer**, **float**, or **text**, and written to separate output files.  
+Each line is categorized as an **integer**, **float** meaning real (R) numbers, or **text**, and written to separate output files.  
 The tool also supports customizable output options and generates statistics per data type.
 
 ---
@@ -12,7 +12,7 @@ The tool also supports customizable output options and generates statistics per 
 - 📂 Categorizes data into integers, floats, and strings
 - 🗂 Output written to separate files:
   - `*.integers.txt`
-  - `*.floats.txt`
+  - `*.floats.txt` => does not include NaN and +-Infinity
   - `*.text.txt`
 - ⚙️ Configurable output directory and file prefix
 - ➕ Optional **append mode**
