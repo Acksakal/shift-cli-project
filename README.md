@@ -1,6 +1,6 @@
 # 🧹 Java CLI File Processor
 
-This is a **Command-Line Interface (CLI) tool written in Java (24.0.2) using IntelliJ IDEA 2025.1.3 (Community Edition) for processing input files line-by-line.  
+This is a Command-Line Interface (CLI) tool written in Java (24.0.2) using IntelliJ IDEA 2025.1.3 (Community Edition) for processing input files line-by-line.  
 Each line is categorized as an **integer**, **float** meaning real (R) numbers, or **text**, and written to separate output files.  
 The tool also supports customizable output options and generates statistics per data type.
 
@@ -12,7 +12,7 @@ The tool also supports customizable output options and generates statistics per 
 - 📂 Categorizes data into integers, floats, and strings
 - 🗂 Output written to separate files:
   - `*.integers.txt`
-  - `*.floats.txt` => does not include NaN and +-Infinity
+  - `*.floats.txt` => does not include NaN and +-Infinity cuz those are not real (R)
   - `*.text.txt`
 - ⚙️ Configurable output directory and file prefix
 - ➕ Optional **append mode**
