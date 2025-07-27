@@ -104,3 +104,11 @@ java -cp src Main -a -f /absolute/path/to/in1.txt
 - **Full statistics (`-f`)**:
   - For integers/floats: count, min, max, sum, average
   - For text: count, shortest, and longest line length
+
+---
+ 
+> ⚠️ **Note for Git Bash Users on Windows**  
+> Keep in mind that Git Bash uses a Unix-like emulated environment,  
+> so absolute paths may resolve differently than in regular Windows CMD or PowerShell.  
+> The home directory, in particular, does not map directly to `C:\Users\YourName`.
+
