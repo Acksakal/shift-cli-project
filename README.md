@@ -1,8 +1,13 @@
 # 🧹 Java CLI File Processor
 
-This is a Command-Line Interface (CLI) tool written in Java (24.0.2) using IntelliJ IDEA 2025.1.3 (Community Edition) for processing input files line-by-line.  
-Each line is categorized as an **integer**, **float** meaning real (R) numbers, or **text**, and written to separate output files.  
+This is a Command-Line Interface (CLI) tool for processing input files line-by-line.
+
+Each line is categorized as an **integer**, **float** (real **ℝ** numbers), or **text**, and written to corresponding output files.  
 The tool also supports customizable output options and generates statistics per data type.
+
+**🛠 Developed with:**
+- Java **24.0.2**
+- IntelliJ IDEA **2025.1.3 (Community Edition)**
 
 ---
 
