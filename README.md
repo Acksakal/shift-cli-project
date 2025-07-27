@@ -51,10 +51,10 @@ java -jar util.jar -s -a -p sample- in1.txt in2.txt
 
 #### 🛠️ Option 2: Compile and run from source (for developers)
 
-If you're working with source code, compile and run like this:
+If you're working with source code, compile and run like this and yes, it was written and tested on Windows:
 
 ```sh
-javac src\*.java => yes, it was written and tested on Windows
+javac src\*.java
 ```
 
 Then run:
