@@ -49,8 +49,7 @@ class FileProcessor {
                     } else {
                         failedTypes.add(type);
                         System.out.println(
-                                "\u001B[31mSkipping all lines of type '" + type +
-                                        "' due to missing output file.\u001B[0m"
+                                "\u001B[31m" + outputFile + " was not found. Skipping all lines of this type.\u001B[0m"
                         );
                     }
                 }

@@ -28,7 +28,7 @@ public class Main {
 
 
         // Print collected statistics if requested via flags
-        if (config.collectShortStats || config.collectFullStats) {
+        if ((config.collectShortStats || config.collectFullStats) && !statsMap.isEmpty()) {
             Stats.printStats(statsMap, config.collectFullStats);
         }
     }
